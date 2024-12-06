@@ -102,7 +102,10 @@ const TeacherListPage = async ({searchParams}:{ searchParams : {[key: string]: s
                         }
                         break;
                     case "search":
-                        query.name = {contains:value, mode:"insensitive"}
+                        query.name = {contains:value, mode:"insensitive"};
+                        break;
+                    default:
+                        break;
                 }
             }
         }
