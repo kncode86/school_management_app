@@ -127,8 +127,8 @@ const SingleTeacherPage = () => {
                         <Link className="p-3 rounded-md bg-customSkyLight" href={`/list/classes?supervisorId=${"teacher2"}`} >Teacher&apos;s Classes</Link>
                         <Link className="p-3 rounded-md bg-customPurpleLight" href={`/list/students?teacherId=${"teacher2"}`} >Teacher&apos;s Students</Link>
                         <Link className="p-3 rounded-md bg-customYellowLight" href={`/list/lessons?teacherId=${"teacher2"}`} >Teacher&apos;s Lessons</Link>
-                        <Link className="p-3 rounded-md bg-pink-50" href="/" >Teacher&apos;s Exams</Link>
-                        <Link className="p-3 rounded-md bg-customSkyLight" href="/" >Teacher&apos;s Assignments</Link>
+                        <Link className="p-3 rounded-md bg-pink-50" href={`/list/exams?supervisorId=${"teacher2"}`} >Teacher&apos;s Exams</Link>
+                        <Link className="p-3 rounded-md bg-customSkyLight" href={`/list/assignments?supervisorId=${"teacher2"}`} >Teacher&apos;s Assignments</Link>
                     </div>
                 </div>
                 <Performance />
