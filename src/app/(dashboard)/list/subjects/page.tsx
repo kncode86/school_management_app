@@ -60,6 +60,8 @@ const SubjectListPage = async ({searchParams}:{ searchParams : {[key: string]: s
                     case "search":
                         query.name = {contains:value, mode:"insensitive"};
                         break;
+                    default:
+                        break;
                 }
             }
         }

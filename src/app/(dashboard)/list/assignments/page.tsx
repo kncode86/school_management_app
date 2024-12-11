@@ -87,6 +87,8 @@ const AssignmentListPage = async ({searchParams}:{ searchParams : {[key: string]
                             }
                         }
                         break;
+                    default:
+                        break;
                 }
             }
         }
@@ -109,7 +111,6 @@ const AssignmentListPage = async ({searchParams}:{ searchParams : {[key: string]
         }),
         prisma.assignment.count({ where:query})
     ])
-   
 
     return (
         <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">

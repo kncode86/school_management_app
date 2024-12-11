@@ -74,6 +74,8 @@ const LessonListPage = async ({searchParams}:{ searchParams : {[key: string]: st
                             {teacher: {name: {contains:value, mode:"insensitive"}}},
                         ];
                         break;
+                    default:
+                        break;
                 }
             }
         }
